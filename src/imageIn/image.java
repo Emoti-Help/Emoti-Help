@@ -1,9 +1,9 @@
 package imageIn;
 
 public class image {
-    private final String image_address;
+    private final String imageAddress;
 
-    public image(String image_address) {
-        this.image_address = image_address;
+    public image(String imageAddress) {
+        this.imageAddress = imageAddress;
     }
 }

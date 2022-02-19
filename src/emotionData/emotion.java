@@ -1,12 +1,12 @@
 package emotionData;
 
 public class emotion {
-    private final String name;
+
+    private final String emotion;
     private final String likeliness;
 
-
-    public emotion(String name, String likeliness) {
-        this.name = name;
+    public emotion(String emotion, String likeliness) {
+        this.emotion = emotion;
         this.likeliness = likeliness;
     }
 }
