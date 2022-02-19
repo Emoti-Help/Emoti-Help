@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+    id 'jacoco'
+}
+
+group 'org.example'
+version '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    compileOnly 'com.sun.net.httpserver:http:20070405'
+    implementation 'org.postgresql:postgresql:42.3.2'
+    implementation 'javax.json:javax.json-api:1.1.4'
+    implementation 'org.glassfish:javax.json:1.1.4'
+    implementation platform('com.google.cloud:libraries-bom:24.3.0')
+    implementation 'com.google.cloud:google-cloud-vision:2.0.19'
+}
