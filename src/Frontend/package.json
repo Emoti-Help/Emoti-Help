@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "axios": "^0.26.0",
+    "react-images-upload": "^1.2.8"
+  }
+}
