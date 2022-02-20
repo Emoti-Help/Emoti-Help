@@ -1,7 +1,7 @@
 package OutputComputer;
 
 
-import user.currentUser;
+import user.user;
 
 public class MessageGenerator {
     private EmotionComputer emotionComputer;
@@ -9,7 +9,7 @@ public class MessageGenerator {
         this.emotionComputer = new EmotionComputer();
     }
 
-    public String userEmotionScoreProcessor(currentUser user) {
+    public String userEmotionScoreProcessor(user user) {
         int emotionScore = this.emotionComputer.emotionScoreGenerator(user);
         if (emotionScore == 0){
             return "There was an error the user's stored emotion likelinesses";

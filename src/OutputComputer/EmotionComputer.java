@@ -2,7 +2,7 @@ package OutputComputer;
 
 
 import emotionData.emotion;
-import user.currentUser;
+import user.user;
 
 public class EmotionComputer {
 
@@ -22,7 +22,7 @@ public class EmotionComputer {
         }
     }
 
-    public int emotionScoreGenerator(currentUser user) {
+    public int emotionScoreGenerator(user user) {
         int joySorrowRatio = emotionProcessor(user.getJoy()) - emotionProcessor(user.getSorrow());
         if (emotionProcessor(user.getSurprise()) > 3) {
             return 1;
