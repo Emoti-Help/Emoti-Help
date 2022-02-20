@@ -8,12 +8,12 @@ public class EmotionComputer {
 
     public EmotionComputer(){}
 
-    public int emotionProcessor(emotion processedEmotion) {
+    private int emotionProcessor(emotion processedEmotion) {
         if (processedEmotion.getLikeliness() == "Very Unlikely") {
             return 1;
         } else if (processedEmotion.getLikeliness() == "Unlikely") {
             return 2;
-        } else if (processedEmotion.getLikeliness() == "Unlikely") {
+        } else if (processedEmotion.getLikeliness() == "Neutral") {
             return 3;
         } else if (processedEmotion.getLikeliness() == "Likely") {
             return 4;
