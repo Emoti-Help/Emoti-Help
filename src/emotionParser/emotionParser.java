@@ -1,10 +1,12 @@
 package emotionParser;
 
-import user.currentUser;
+import user.user;
 import emotionData.emotion;
 
 import java.util.*;
 import org.json.simple.*;
+//import com.google.gson.JsonObject;
+//import com.google.gson.JsonArray;
 
 
 /**
@@ -18,7 +20,7 @@ public class emotionParser {
     public static final String SORROW = "sorrowLikelihood";
     public static final String SURPRISE = "surpriseLikelihood";
 
-    public static currentUser readData(JSONObject dataFromAPI) {
+    public static user readData(JSONObject dataFromAPI) {
 
         JSONArray faceAnnotations = (JSONArray) dataFromAPI.get("faceAnnotations");
         HashMap<String, emotion> emotions = new HashMap<>();
@@ -43,7 +45,7 @@ public class emotionParser {
                 }
             }
         }
-        return new currentUser(emotions.get("ANGER"), emotions.get("JOY"),
+        return new user(emotions.get("ANGER"), emotions.get("JOY"),
                 emotions.get("SORROW"), emotions.get("SURPRISE"));
     }
 
