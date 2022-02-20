@@ -15,4 +15,20 @@ public class user {
         this.sorrow = sorrow;
         this.surprise = surprise;
     }
+
+    public emotion getAnger() {
+        return anger;
+    }
+
+    public emotion getJoy() {
+        return joy;
+    }
+
+    public emotion getSorrow() {
+        return sorrow;
+    }
+
+    public emotion getSurprise() {
+        return surprise;
+    }
 }

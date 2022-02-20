@@ -9,5 +9,9 @@ public class emotion {
         this.emotion = emotion;
         this.likeliness = likeliness;
     }
+
+    public String getLikeliness() {
+        return likeliness;
+    }
 }
 
