@@ -1,3 +1,3 @@
 # Emoti-Help
 
-A tool that analyses emotions from images 
+This tool uses facial expression to provide resources based on the emotions displayed on the photo uploaded by the user.
