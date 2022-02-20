@@ -21,6 +21,8 @@ dependencies {
     implementation 'org.glassfish:javax.json:1.1.4'
     implementation platform('com.google.cloud:libraries-bom:24.3.0')
     implementation 'com.google.cloud:google-cloud-vision'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
 }
 
 application {
